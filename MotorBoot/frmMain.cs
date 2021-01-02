@@ -247,9 +247,9 @@ namespace MotorBoot
             Reboot();
         }
 
-        private void DoWork()
+        private void DoWork(string address)
         {
-            RunBCDEdit("");
+            RunBCDEdit(address);
 
             Reboot();
         }
@@ -275,14 +275,312 @@ namespace MotorBoot
             */
             //setup new bootsequence
             //address = "2626376a - e111 - 11ea - be43 - f01dca5cfc77"; //test code
+
+            //MessageBox.Show(address);
+
             ProcessStartInfo processStartInfo = new ProcessStartInfo("runas.exe", "/user:Administrator \" cmd /k arp -d \""); // same as "netsh interface ip delete arpcache"
             processStartInfo.RedirectStandardOutput = true;
             processStartInfo.Arguments = @"/C bcdedit /bootsequence {" + address + "}";
+
+            //MessageBox.Show(processStartInfo.Arguments.ToString());
+
             //processStartInfo.CreateNoWindow = true;
             //processStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
             processStartInfo.UseShellExecute = false;
             processStartInfo.StandardOutputEncoding = Encoding.Default;
             Process.Start(processStartInfo);            
+        }
+
+        private string GetAddress(string mfg)
+        {
+            string curaddress = String.Empty;
+            foreach (car x in cars)
+            {
+                if (x.Mfg == mfg)
+                {
+                    curaddress = x.Address;
+                    break;
+                }
+            }
+
+            return curaddress;
+        }
+
+        private void btnAcura_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("acura"));
+        }
+
+        private void btnAudi_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("audi"));
+        }
+
+        private void btnBentley_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("bentley"));
+        }
+
+        private void btnBenz_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("benz"));
+        }
+
+        private void btnBMW_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("bmw"));
+        }
+
+        private void btnChrysler_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("chrysler"));
+        }
+
+        private void btnDaewoo_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("daewoo"));
+        }
+
+        private void btnDucati_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("ducati"));
+        }
+
+        private void btnFiat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("fiat"));
+        }
+
+        private void btnFord_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("ford"));
+        }
+
+        private void btnGM_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("gm"));
+        }
+
+        private void btnHonda_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("honda"));
+        }
+
+        private void btnHyundaiCV_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("hyundaicv"));
+        }
+
+        private void btnHyundai_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("hyundai"));
+        }
+
+        private void btnInfiniti_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("infiniti"));
+        }
+
+        private void btnIsuzu_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("isuzu"));
+        }
+
+        private void btnJaguar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("jaguar"));
+        }
+
+        private void btnKia_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("kia"));
+        }
+
+        private void btnLandRover_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("landrover"));
+        }
+
+        private void btnLexus_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("lexus"));
+        }
+
+        private void btnMazda_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("mazda"));
+        }
+
+        private void btnMini_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("mini"));
+        }
+
+        private void btnMitsubishi_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("mitsubishi"));
+        }
+
+        private void btnNissan_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("nissan"));
+        }
+
+        private void btnPorsche_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("porsche"));
+        }
+
+        private void btnRollsRoyce_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("rollsroyce"));
+        }
+
+        private void btnSaab_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("saab"));
+        }
+
+        private void btnScion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("scion"));
+        }
+
+        private void btnSprinter_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("sprinter"));
+        }
+
+        private void btnSubaru_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("subaru"));
+        }
+
+        private void btnTata_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("tata"));
+        }
+
+        private void btnToyota_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("toyota"));
+        }
+
+        private void btnVauxhall_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("vauxhall"));
+        }
+
+        private void btnVolvo_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to reboot system?", "Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
+            DoWork(GetAddress("volvo"));
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("When configuring partition address, do not add brackets as part of address. Example: 2626376a - e111 - 11ea - be43 - f01dca5cfc77");
         }
     }
 }

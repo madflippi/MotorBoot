@@ -9,3 +9,15 @@ C:\Projects\MotorBoot\MotorBoot\MotorBoot\bin\Debug\MotorBoot.pdb
 C:\Projects\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.exe
 C:\Projects\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.pdb
 C:\Projects\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.dlgConfig.resources
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\bin\Debug\MotorBoot.exe.config
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\bin\Debug\MotorBoot.exe
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\bin\Debug\MotorBoot.pdb
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.dlgConfig.resources
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.Main.resources
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.frmConfig.resources
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.Properties.Resources.resources
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.csproj.GenerateResource.Cache
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.csproj.CoreCompileInputs.cache
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.exe
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.pdb
+C:\Projects\MotorBoot\MotorBoot\MotorBoot\MotorBoot\obj\Debug\MotorBoot.csprojResolveAssemblyReference.cache

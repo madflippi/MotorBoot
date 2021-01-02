@@ -70,6 +70,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnTest = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             this.btnAcura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcura.ImageIndex = 0;
             this.btnAcura.ImageList = this.imageList1;
-            this.btnAcura.Location = new System.Drawing.Point(12, 70);
+            this.btnAcura.Location = new System.Drawing.Point(8, 73);
             this.btnAcura.Name = "btnAcura";
             this.btnAcura.Size = new System.Drawing.Size(117, 48);
             this.btnAcura.TabIndex = 0;
@@ -86,6 +87,7 @@
             this.btnAcura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAcura.UseVisualStyleBackColor = true;
+            this.btnAcura.Click += new System.EventHandler(this.btnAcura_Click);
             // 
             // imageList1
             // 
@@ -131,7 +133,7 @@
             this.btnVolvo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVolvo.ImageIndex = 33;
             this.btnVolvo.ImageList = this.imageList1;
-            this.btnVolvo.Location = new System.Drawing.Point(504, 340);
+            this.btnVolvo.Location = new System.Drawing.Point(500, 343);
             this.btnVolvo.Name = "btnVolvo";
             this.btnVolvo.Size = new System.Drawing.Size(117, 48);
             this.btnVolvo.TabIndex = 1;
@@ -139,13 +141,14 @@
             this.btnVolvo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVolvo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVolvo.UseVisualStyleBackColor = true;
+            this.btnVolvo.Click += new System.EventHandler(this.btnVolvo_Click);
             // 
             // btnVauxhall
             // 
             this.btnVauxhall.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVauxhall.ImageIndex = 32;
             this.btnVauxhall.ImageList = this.imageList1;
-            this.btnVauxhall.Location = new System.Drawing.Point(504, 286);
+            this.btnVauxhall.Location = new System.Drawing.Point(500, 289);
             this.btnVauxhall.Name = "btnVauxhall";
             this.btnVauxhall.Size = new System.Drawing.Size(117, 48);
             this.btnVauxhall.TabIndex = 2;
@@ -153,13 +156,14 @@
             this.btnVauxhall.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVauxhall.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVauxhall.UseVisualStyleBackColor = true;
+            this.btnVauxhall.Click += new System.EventHandler(this.btnVauxhall_Click);
             // 
             // btnToyota
             // 
             this.btnToyota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnToyota.ImageIndex = 31;
             this.btnToyota.ImageList = this.imageList1;
-            this.btnToyota.Location = new System.Drawing.Point(504, 232);
+            this.btnToyota.Location = new System.Drawing.Point(500, 235);
             this.btnToyota.Name = "btnToyota";
             this.btnToyota.Size = new System.Drawing.Size(117, 48);
             this.btnToyota.TabIndex = 3;
@@ -167,13 +171,14 @@
             this.btnToyota.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnToyota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnToyota.UseVisualStyleBackColor = true;
+            this.btnToyota.Click += new System.EventHandler(this.btnToyota_Click);
             // 
             // btnTata
             // 
             this.btnTata.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTata.ImageIndex = 30;
             this.btnTata.ImageList = this.imageList1;
-            this.btnTata.Location = new System.Drawing.Point(504, 178);
+            this.btnTata.Location = new System.Drawing.Point(500, 181);
             this.btnTata.Name = "btnTata";
             this.btnTata.Size = new System.Drawing.Size(117, 48);
             this.btnTata.TabIndex = 4;
@@ -181,13 +186,14 @@
             this.btnTata.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTata.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTata.UseVisualStyleBackColor = true;
+            this.btnTata.Click += new System.EventHandler(this.btnTata_Click);
             // 
             // btnSubaru
             // 
             this.btnSubaru.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubaru.ImageIndex = 29;
             this.btnSubaru.ImageList = this.imageList1;
-            this.btnSubaru.Location = new System.Drawing.Point(504, 124);
+            this.btnSubaru.Location = new System.Drawing.Point(500, 127);
             this.btnSubaru.Name = "btnSubaru";
             this.btnSubaru.Size = new System.Drawing.Size(117, 48);
             this.btnSubaru.TabIndex = 5;
@@ -195,13 +201,14 @@
             this.btnSubaru.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubaru.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSubaru.UseVisualStyleBackColor = true;
+            this.btnSubaru.Click += new System.EventHandler(this.btnSubaru_Click);
             // 
             // btnSprinter
             // 
             this.btnSprinter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSprinter.ImageIndex = 28;
             this.btnSprinter.ImageList = this.imageList1;
-            this.btnSprinter.Location = new System.Drawing.Point(504, 70);
+            this.btnSprinter.Location = new System.Drawing.Point(500, 73);
             this.btnSprinter.Name = "btnSprinter";
             this.btnSprinter.Size = new System.Drawing.Size(117, 48);
             this.btnSprinter.TabIndex = 6;
@@ -209,13 +216,14 @@
             this.btnSprinter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSprinter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSprinter.UseVisualStyleBackColor = true;
+            this.btnSprinter.Click += new System.EventHandler(this.btnSprinter_Click);
             // 
             // btnScion
             // 
             this.btnScion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnScion.ImageIndex = 27;
             this.btnScion.ImageList = this.imageList1;
-            this.btnScion.Location = new System.Drawing.Point(381, 393);
+            this.btnScion.Location = new System.Drawing.Point(377, 396);
             this.btnScion.Name = "btnScion";
             this.btnScion.Size = new System.Drawing.Size(117, 48);
             this.btnScion.TabIndex = 7;
@@ -223,13 +231,14 @@
             this.btnScion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnScion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnScion.UseVisualStyleBackColor = true;
+            this.btnScion.Click += new System.EventHandler(this.btnScion_Click);
             // 
             // btnSaab
             // 
             this.btnSaab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSaab.ImageIndex = 26;
             this.btnSaab.ImageList = this.imageList1;
-            this.btnSaab.Location = new System.Drawing.Point(381, 340);
+            this.btnSaab.Location = new System.Drawing.Point(377, 343);
             this.btnSaab.Name = "btnSaab";
             this.btnSaab.Size = new System.Drawing.Size(117, 48);
             this.btnSaab.TabIndex = 8;
@@ -237,13 +246,14 @@
             this.btnSaab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSaab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSaab.UseVisualStyleBackColor = true;
+            this.btnSaab.Click += new System.EventHandler(this.btnSaab_Click);
             // 
             // btnRollsRoyce
             // 
             this.btnRollsRoyce.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRollsRoyce.ImageIndex = 25;
             this.btnRollsRoyce.ImageList = this.imageList1;
-            this.btnRollsRoyce.Location = new System.Drawing.Point(381, 286);
+            this.btnRollsRoyce.Location = new System.Drawing.Point(377, 289);
             this.btnRollsRoyce.Name = "btnRollsRoyce";
             this.btnRollsRoyce.Size = new System.Drawing.Size(117, 48);
             this.btnRollsRoyce.TabIndex = 9;
@@ -251,13 +261,14 @@
             this.btnRollsRoyce.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRollsRoyce.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRollsRoyce.UseVisualStyleBackColor = true;
+            this.btnRollsRoyce.Click += new System.EventHandler(this.btnRollsRoyce_Click);
             // 
             // btnPorsche
             // 
             this.btnPorsche.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPorsche.ImageIndex = 24;
             this.btnPorsche.ImageList = this.imageList1;
-            this.btnPorsche.Location = new System.Drawing.Point(381, 232);
+            this.btnPorsche.Location = new System.Drawing.Point(377, 235);
             this.btnPorsche.Name = "btnPorsche";
             this.btnPorsche.Size = new System.Drawing.Size(117, 48);
             this.btnPorsche.TabIndex = 10;
@@ -265,13 +276,14 @@
             this.btnPorsche.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPorsche.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPorsche.UseVisualStyleBackColor = true;
+            this.btnPorsche.Click += new System.EventHandler(this.btnPorsche_Click);
             // 
             // btnNissan
             // 
             this.btnNissan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNissan.ImageIndex = 23;
             this.btnNissan.ImageList = this.imageList1;
-            this.btnNissan.Location = new System.Drawing.Point(381, 178);
+            this.btnNissan.Location = new System.Drawing.Point(377, 181);
             this.btnNissan.Name = "btnNissan";
             this.btnNissan.Size = new System.Drawing.Size(117, 48);
             this.btnNissan.TabIndex = 11;
@@ -279,13 +291,14 @@
             this.btnNissan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNissan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNissan.UseVisualStyleBackColor = true;
+            this.btnNissan.Click += new System.EventHandler(this.btnNissan_Click);
             // 
             // btnMitsubishi
             // 
             this.btnMitsubishi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMitsubishi.ImageIndex = 22;
             this.btnMitsubishi.ImageList = this.imageList1;
-            this.btnMitsubishi.Location = new System.Drawing.Point(381, 124);
+            this.btnMitsubishi.Location = new System.Drawing.Point(377, 127);
             this.btnMitsubishi.Name = "btnMitsubishi";
             this.btnMitsubishi.Size = new System.Drawing.Size(117, 48);
             this.btnMitsubishi.TabIndex = 12;
@@ -293,13 +306,14 @@
             this.btnMitsubishi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMitsubishi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMitsubishi.UseVisualStyleBackColor = true;
+            this.btnMitsubishi.Click += new System.EventHandler(this.btnMitsubishi_Click);
             // 
             // btnMini
             // 
             this.btnMini.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMini.ImageIndex = 21;
             this.btnMini.ImageList = this.imageList1;
-            this.btnMini.Location = new System.Drawing.Point(381, 70);
+            this.btnMini.Location = new System.Drawing.Point(377, 73);
             this.btnMini.Name = "btnMini";
             this.btnMini.Size = new System.Drawing.Size(117, 48);
             this.btnMini.TabIndex = 13;
@@ -307,13 +321,14 @@
             this.btnMini.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMini.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMini.UseVisualStyleBackColor = true;
+            this.btnMini.Click += new System.EventHandler(this.btnMini_Click);
             // 
             // btnMazda
             // 
             this.btnMazda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMazda.ImageIndex = 20;
             this.btnMazda.ImageList = this.imageList1;
-            this.btnMazda.Location = new System.Drawing.Point(258, 393);
+            this.btnMazda.Location = new System.Drawing.Point(254, 396);
             this.btnMazda.Name = "btnMazda";
             this.btnMazda.Size = new System.Drawing.Size(117, 48);
             this.btnMazda.TabIndex = 14;
@@ -321,13 +336,14 @@
             this.btnMazda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMazda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMazda.UseVisualStyleBackColor = true;
+            this.btnMazda.Click += new System.EventHandler(this.btnMazda_Click);
             // 
             // btnLexus
             // 
             this.btnLexus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLexus.ImageIndex = 19;
             this.btnLexus.ImageList = this.imageList1;
-            this.btnLexus.Location = new System.Drawing.Point(258, 340);
+            this.btnLexus.Location = new System.Drawing.Point(254, 343);
             this.btnLexus.Name = "btnLexus";
             this.btnLexus.Size = new System.Drawing.Size(117, 48);
             this.btnLexus.TabIndex = 15;
@@ -335,13 +351,14 @@
             this.btnLexus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLexus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLexus.UseVisualStyleBackColor = true;
+            this.btnLexus.Click += new System.EventHandler(this.btnLexus_Click);
             // 
             // btnLandRover
             // 
             this.btnLandRover.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLandRover.ImageIndex = 18;
             this.btnLandRover.ImageList = this.imageList1;
-            this.btnLandRover.Location = new System.Drawing.Point(258, 286);
+            this.btnLandRover.Location = new System.Drawing.Point(254, 289);
             this.btnLandRover.Name = "btnLandRover";
             this.btnLandRover.Size = new System.Drawing.Size(117, 48);
             this.btnLandRover.TabIndex = 16;
@@ -349,13 +366,14 @@
             this.btnLandRover.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLandRover.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLandRover.UseVisualStyleBackColor = true;
+            this.btnLandRover.Click += new System.EventHandler(this.btnLandRover_Click);
             // 
             // btnKia
             // 
             this.btnKia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKia.ImageIndex = 17;
             this.btnKia.ImageList = this.imageList1;
-            this.btnKia.Location = new System.Drawing.Point(258, 232);
+            this.btnKia.Location = new System.Drawing.Point(254, 235);
             this.btnKia.Name = "btnKia";
             this.btnKia.Size = new System.Drawing.Size(117, 48);
             this.btnKia.TabIndex = 17;
@@ -363,13 +381,14 @@
             this.btnKia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKia.UseVisualStyleBackColor = true;
+            this.btnKia.Click += new System.EventHandler(this.btnKia_Click);
             // 
             // btnJaguar
             // 
             this.btnJaguar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnJaguar.ImageIndex = 16;
             this.btnJaguar.ImageList = this.imageList1;
-            this.btnJaguar.Location = new System.Drawing.Point(258, 178);
+            this.btnJaguar.Location = new System.Drawing.Point(254, 181);
             this.btnJaguar.Name = "btnJaguar";
             this.btnJaguar.Size = new System.Drawing.Size(117, 48);
             this.btnJaguar.TabIndex = 18;
@@ -377,13 +396,14 @@
             this.btnJaguar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnJaguar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnJaguar.UseVisualStyleBackColor = true;
+            this.btnJaguar.Click += new System.EventHandler(this.btnJaguar_Click);
             // 
             // btnIsuzu
             // 
             this.btnIsuzu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIsuzu.ImageIndex = 15;
             this.btnIsuzu.ImageList = this.imageList1;
-            this.btnIsuzu.Location = new System.Drawing.Point(258, 124);
+            this.btnIsuzu.Location = new System.Drawing.Point(254, 127);
             this.btnIsuzu.Name = "btnIsuzu";
             this.btnIsuzu.Size = new System.Drawing.Size(117, 48);
             this.btnIsuzu.TabIndex = 19;
@@ -391,13 +411,14 @@
             this.btnIsuzu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIsuzu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnIsuzu.UseVisualStyleBackColor = true;
+            this.btnIsuzu.Click += new System.EventHandler(this.btnIsuzu_Click);
             // 
             // btnInfiniti
             // 
             this.btnInfiniti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfiniti.ImageIndex = 14;
             this.btnInfiniti.ImageList = this.imageList1;
-            this.btnInfiniti.Location = new System.Drawing.Point(258, 70);
+            this.btnInfiniti.Location = new System.Drawing.Point(254, 73);
             this.btnInfiniti.Name = "btnInfiniti";
             this.btnInfiniti.Size = new System.Drawing.Size(117, 48);
             this.btnInfiniti.TabIndex = 20;
@@ -405,13 +426,14 @@
             this.btnInfiniti.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInfiniti.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnInfiniti.UseVisualStyleBackColor = true;
+            this.btnInfiniti.Click += new System.EventHandler(this.btnInfiniti_Click);
             // 
             // btnHyundai
             // 
             this.btnHyundai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHyundai.ImageIndex = 13;
             this.btnHyundai.ImageList = this.imageList1;
-            this.btnHyundai.Location = new System.Drawing.Point(135, 394);
+            this.btnHyundai.Location = new System.Drawing.Point(131, 397);
             this.btnHyundai.Name = "btnHyundai";
             this.btnHyundai.Size = new System.Drawing.Size(117, 48);
             this.btnHyundai.TabIndex = 21;
@@ -419,13 +441,14 @@
             this.btnHyundai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHyundai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHyundai.UseVisualStyleBackColor = true;
+            this.btnHyundai.Click += new System.EventHandler(this.btnHyundai_Click);
             // 
             // btnHyundaiCV
             // 
             this.btnHyundaiCV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHyundaiCV.ImageIndex = 12;
             this.btnHyundaiCV.ImageList = this.imageList1;
-            this.btnHyundaiCV.Location = new System.Drawing.Point(135, 340);
+            this.btnHyundaiCV.Location = new System.Drawing.Point(131, 343);
             this.btnHyundaiCV.Name = "btnHyundaiCV";
             this.btnHyundaiCV.Size = new System.Drawing.Size(117, 48);
             this.btnHyundaiCV.TabIndex = 22;
@@ -433,13 +456,14 @@
             this.btnHyundaiCV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHyundaiCV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHyundaiCV.UseVisualStyleBackColor = true;
+            this.btnHyundaiCV.Click += new System.EventHandler(this.btnHyundaiCV_Click);
             // 
             // btnHonda
             // 
             this.btnHonda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHonda.ImageIndex = 11;
             this.btnHonda.ImageList = this.imageList1;
-            this.btnHonda.Location = new System.Drawing.Point(135, 286);
+            this.btnHonda.Location = new System.Drawing.Point(131, 289);
             this.btnHonda.Name = "btnHonda";
             this.btnHonda.Size = new System.Drawing.Size(117, 48);
             this.btnHonda.TabIndex = 23;
@@ -447,13 +471,14 @@
             this.btnHonda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHonda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHonda.UseVisualStyleBackColor = true;
+            this.btnHonda.Click += new System.EventHandler(this.btnHonda_Click);
             // 
             // btnGM
             // 
             this.btnGM.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGM.ImageIndex = 10;
             this.btnGM.ImageList = this.imageList1;
-            this.btnGM.Location = new System.Drawing.Point(135, 232);
+            this.btnGM.Location = new System.Drawing.Point(131, 235);
             this.btnGM.Name = "btnGM";
             this.btnGM.Size = new System.Drawing.Size(117, 48);
             this.btnGM.TabIndex = 24;
@@ -461,13 +486,14 @@
             this.btnGM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGM.UseVisualStyleBackColor = true;
+            this.btnGM.Click += new System.EventHandler(this.btnGM_Click);
             // 
             // btnFord
             // 
             this.btnFord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFord.ImageIndex = 9;
             this.btnFord.ImageList = this.imageList1;
-            this.btnFord.Location = new System.Drawing.Point(135, 178);
+            this.btnFord.Location = new System.Drawing.Point(131, 181);
             this.btnFord.Name = "btnFord";
             this.btnFord.Size = new System.Drawing.Size(117, 48);
             this.btnFord.TabIndex = 25;
@@ -475,13 +501,14 @@
             this.btnFord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFord.UseVisualStyleBackColor = true;
+            this.btnFord.Click += new System.EventHandler(this.btnFord_Click);
             // 
             // btnFiat
             // 
             this.btnFiat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiat.ImageIndex = 8;
             this.btnFiat.ImageList = this.imageList1;
-            this.btnFiat.Location = new System.Drawing.Point(135, 124);
+            this.btnFiat.Location = new System.Drawing.Point(131, 127);
             this.btnFiat.Name = "btnFiat";
             this.btnFiat.Size = new System.Drawing.Size(117, 48);
             this.btnFiat.TabIndex = 26;
@@ -489,13 +516,14 @@
             this.btnFiat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFiat.UseVisualStyleBackColor = true;
+            this.btnFiat.Click += new System.EventHandler(this.btnFiat_Click);
             // 
             // btnDucati
             // 
             this.btnDucati.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDucati.ImageIndex = 7;
             this.btnDucati.ImageList = this.imageList1;
-            this.btnDucati.Location = new System.Drawing.Point(135, 70);
+            this.btnDucati.Location = new System.Drawing.Point(131, 73);
             this.btnDucati.Name = "btnDucati";
             this.btnDucati.Size = new System.Drawing.Size(117, 48);
             this.btnDucati.TabIndex = 27;
@@ -503,13 +531,14 @@
             this.btnDucati.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDucati.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDucati.UseVisualStyleBackColor = true;
+            this.btnDucati.Click += new System.EventHandler(this.btnDucati_Click);
             // 
             // btnDaewoo
             // 
             this.btnDaewoo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDaewoo.ImageIndex = 6;
             this.btnDaewoo.ImageList = this.imageList1;
-            this.btnDaewoo.Location = new System.Drawing.Point(12, 394);
+            this.btnDaewoo.Location = new System.Drawing.Point(8, 397);
             this.btnDaewoo.Name = "btnDaewoo";
             this.btnDaewoo.Size = new System.Drawing.Size(117, 48);
             this.btnDaewoo.TabIndex = 28;
@@ -517,13 +546,14 @@
             this.btnDaewoo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDaewoo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDaewoo.UseVisualStyleBackColor = true;
+            this.btnDaewoo.Click += new System.EventHandler(this.btnDaewoo_Click);
             // 
             // btnChrysler
             // 
             this.btnChrysler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChrysler.ImageIndex = 5;
             this.btnChrysler.ImageList = this.imageList1;
-            this.btnChrysler.Location = new System.Drawing.Point(12, 340);
+            this.btnChrysler.Location = new System.Drawing.Point(8, 343);
             this.btnChrysler.Name = "btnChrysler";
             this.btnChrysler.Size = new System.Drawing.Size(117, 48);
             this.btnChrysler.TabIndex = 29;
@@ -531,13 +561,14 @@
             this.btnChrysler.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChrysler.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnChrysler.UseVisualStyleBackColor = true;
+            this.btnChrysler.Click += new System.EventHandler(this.btnChrysler_Click);
             // 
             // btnBMW
             // 
             this.btnBMW.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBMW.ImageIndex = 4;
             this.btnBMW.ImageList = this.imageList1;
-            this.btnBMW.Location = new System.Drawing.Point(12, 286);
+            this.btnBMW.Location = new System.Drawing.Point(8, 289);
             this.btnBMW.Name = "btnBMW";
             this.btnBMW.Size = new System.Drawing.Size(117, 48);
             this.btnBMW.TabIndex = 30;
@@ -545,13 +576,14 @@
             this.btnBMW.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBMW.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBMW.UseVisualStyleBackColor = true;
+            this.btnBMW.Click += new System.EventHandler(this.btnBMW_Click);
             // 
             // btnBenz
             // 
             this.btnBenz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBenz.ImageIndex = 3;
             this.btnBenz.ImageList = this.imageList1;
-            this.btnBenz.Location = new System.Drawing.Point(12, 232);
+            this.btnBenz.Location = new System.Drawing.Point(8, 235);
             this.btnBenz.Name = "btnBenz";
             this.btnBenz.Size = new System.Drawing.Size(117, 48);
             this.btnBenz.TabIndex = 31;
@@ -559,13 +591,14 @@
             this.btnBenz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBenz.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBenz.UseVisualStyleBackColor = true;
+            this.btnBenz.Click += new System.EventHandler(this.btnBenz_Click);
             // 
             // btnBentley
             // 
             this.btnBentley.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBentley.ImageIndex = 2;
             this.btnBentley.ImageList = this.imageList1;
-            this.btnBentley.Location = new System.Drawing.Point(12, 178);
+            this.btnBentley.Location = new System.Drawing.Point(8, 181);
             this.btnBentley.Name = "btnBentley";
             this.btnBentley.Size = new System.Drawing.Size(117, 48);
             this.btnBentley.TabIndex = 32;
@@ -573,13 +606,14 @@
             this.btnBentley.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBentley.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBentley.UseVisualStyleBackColor = true;
+            this.btnBentley.Click += new System.EventHandler(this.btnBentley_Click);
             // 
             // btnAudi
             // 
             this.btnAudi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAudi.ImageIndex = 1;
             this.btnAudi.ImageList = this.imageList1;
-            this.btnAudi.Location = new System.Drawing.Point(12, 124);
+            this.btnAudi.Location = new System.Drawing.Point(8, 127);
             this.btnAudi.Name = "btnAudi";
             this.btnAudi.Size = new System.Drawing.Size(117, 48);
             this.btnAudi.TabIndex = 33;
@@ -587,6 +621,7 @@
             this.btnAudi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAudi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAudi.UseVisualStyleBackColor = true;
+            this.btnAudi.Click += new System.EventHandler(this.btnAudi_Click);
             // 
             // menuStrip1
             // 
@@ -595,7 +630,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(746, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(626, 24);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -611,11 +646,12 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // btnTest
             // 
             this.btnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTest.Location = new System.Drawing.Point(592, 41);
+            this.btnTest.Location = new System.Drawing.Point(539, 38);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(75, 23);
             this.btnTest.TabIndex = 35;
@@ -627,18 +663,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(363, 20);
+            this.label1.Size = new System.Drawing.Size(507, 16);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Select the Car Manufacturer to set your system to.";
+            this.label1.Text = "Select the Car Manufacturer to set your system to. This action will reboot your s" +
+    "ystem.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(370, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.TabIndex = 37;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 456);
+            this.ClientSize = new System.Drawing.Size(626, 484);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.btnAudi);
@@ -676,8 +723,14 @@
             this.Controls.Add(this.btnVolvo);
             this.Controls.Add(this.btnAcura);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(642, 523);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(642, 523);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Motor Boot";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -728,6 +781,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
